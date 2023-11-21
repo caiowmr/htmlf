@@ -1,0 +1,116 @@
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(18, 18, 18), rgb(42, 42, 42));
+}
+nav ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+nav ul a{
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul a li{
+	display: inline-flex;
+	padding: 0px 10px;
+}
+li:hover{
+    box-shadow: -2px, -2px, 0.9px rgba(0, 0, 0, 0.9px);    
+    
+}
+
+ul:hover li:not(:hover){
+    color: rgb(132, 132, 132);
+}
+
+#menu{
+	background-color: rgb(18, 18, 18);
+	text-align: center;
+	padding: 10px 0px;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	
+}
+.container-login{
+    padding: 15px;
+    margin: 50px auto;
+    width: 70%;
+    border-radius: 20px;
+    background-color: #ccc;
+    box-shadow: 2px 2px 10px rgba(155, 159, 171, 0.8);
+    
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+
+input {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+#nome, #sobrenome{
+    flex-basis: 500px;
+}
+
+#senha, #confirmarSenha, #email{            
+    flex-basis: 333px;
+}
+
+#telefone{
+    flex-basis: 300px;
+}
+#cep, #rua{
+    flex-basis: 500px;
+}
+#reset, #enviar{
+    flex-basis: 300px;
+}
+#bairro, #cidade, #estado{
+    flex-basis: 100px;
+}
+button {
+    flex-grow: 1;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+    background-color: rgb(53, 229, 22);
+    color: #fff;
+    border: 1px  solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.6s ease; 
+}
+
+button:hover {
+    background-color: rgb(44, 158, 23);
+    box-shadow: 0px 0px 15px rgba(53, 229, 22, 1);
+    border: 0.5px solid rgb(53, 229, 22);
+}
+
+button[type="reset"]{            
+    background-color: rgb(251, 3, 3);
+}
+
+button[type="reset"]:hover{            
+    background-color: rgb(185, 0, 0);
+    box-shadow: 0px 0px 15px rgb(251, 3, 3);
+    border: 0.5px solid rgb(251, 3, 3);
+    
+}
+

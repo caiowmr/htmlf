@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Display</title>
+    
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+    <section class="container">
+    <h1>Aula display</h1>
+
+    <div class="block">
+        <h2>Conteudo display block</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore commodi neque, corrupti placeat sed voluptatibus expedita aperiam ipsa vero, optio hic minima? Iste recusandae debitis, soluta fugiat officia exercitationem assumenda?</p>
+    </div>
+    <span class="azul block">Display block</span>
+    <div>
+        <h2>Display Inline</h2>
+        <div class="inline">Display Inline</div>
+        <div class="inline">Display Inline</div>
+        <div class="inline">Display Inline</div>
+        <div class="inline">Display Inline</div>
+    </div>
+    <div class="">
+        <h2>Display inline-block</h2>
+        <div class="inline-block">Display inline-block</div>
+        <div class="inline-block">Display inline-block</div>
+        <div class="inline-block">Display inline-block</div>
+        <div class="inline-block">Display inline-block</div>
+    </div>
+
+    <br>
+
+    <div id="mostrar" class="none">
+        <h2>Display nome</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, repellendus! Animi, fuga cupiditate? Culpa non unde ab illo voluptates quas explicabo assumenda quasi eos magni, neque nisi reprehenderit exercitationem amet!</p>
+        <ul>
+            <li>elemento 1</li>
+            <li>elemento 2</li>
+            <li>elemento 3</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <form>
+        <label for="mostrar">Mostrar: </label>
+        <input type="radio" name="Exibir" id="mostrar" 
+        onclick="document.getElementById('mostrar').classList.remove('none')">
+        <label for="Nmostrar">Fechar</label>
+        <input type="radio" name="Exibir" id="Nmostrar"
+        onclick="document.getElementById('mostrar').classList.add('none')">
+    </form>
+    </section>
+</body>
+</html>

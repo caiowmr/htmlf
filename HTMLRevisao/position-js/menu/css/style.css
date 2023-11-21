@@ -1,0 +1,53 @@
+body{ 
+    margin: 0;
+    height: 200vh;
+}
+
+main{
+    background-color: #909090;
+    width: 80%;
+    margin: 50px auto;
+}
+div{
+    padding: 10px;
+}
+div:hover{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgba(255, 1, 192, 0.597);
+    backdrop-filter: blur(10px);
+}
+
+.relative{
+    position: relative;
+    background-color: blueviolet;
+    bottom: 20px;
+    left: 20px;
+}
+
+.absolute{
+    position: absolute;
+    background-color: brown;
+    top: 20px;
+    right: 20px;
+}
+
+.fixed{
+    position: fixed;
+    background-color: chartreuse;
+    bottom: 20px;
+    right: 20px;
+}
+
+.static{
+    position: static;
+    background-color: burlywood;
+    top: 20px;
+    left: 20px;
+}

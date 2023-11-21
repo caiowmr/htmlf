@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form action="/registrar" method="post">
+    <h1>Cadastro de Usuário</h1>
+    <table>
+      <tr>
+        <td>Nome:</td>
+        <td class="campo"><input type="text" name="nome" id="nome"></td>
+      </tr>
+      <tr>
+        <td>E-mail:</td>
+        <td class="campo"><input type="email" name="email" id="email"></td>
+      </tr>
+      <tr>
+        <td>Senha:</td>
+        <td class="campo"><input type="password" name="senha" id="senha"></td>
+      </tr>
+      <tr>
+        <td>Confirmar Senha:</td>
+        <td class="campo"><input type="password" name="confirmar-senha" id="confirmar-senha"></td>
+      </tr>
+      <tr>
+        <td>Cidade:</td>
+        <td class="campo"><input type="text" name="cidade" id="cidade"></td>
+      </tr>
+      <tr>
+        <td>Telefone:</td>
+        <td class="campo"><input type="tel" name="telefone" id="telefone"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="Cadastrar">
+          <input type="reset" value="Limpar">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

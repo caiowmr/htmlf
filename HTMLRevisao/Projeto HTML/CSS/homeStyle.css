@@ -1,0 +1,70 @@
+.container{
+    margin: 5px 5px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    grid-template-areas: 
+    "header header header header"
+    "main main main sidebar"
+    "footer footer footer footer";
+}   
+header{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    grid-area: header;
+    padding: 3px;
+
+}
+aside{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    grid-area: sidebar;
+    background-color: blueviolet;
+    padding: 10px;
+    
+}
+main{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    grid-area: main;
+    background-color: aquamarine;
+    padding: 10px;
+    
+}
+footer{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    grid-area: footer;
+    background-color: crimson;
+    padding: 10px;
+}
+
+.item{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    background-color:cadetblue ;
+    display: inline-block;
+    text-align: center;
+    width: calc(33.33% - 43px);
+    min-width: 300px;
+    padding: 50px 20px;
+    margin: 5px 0px;
+}
+.item:hover{
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    background-image: url(login_icon_151220.png);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 50px 20px;
+    
+}
+<!--@media(max-width: 780px){
+    .item{
+        width: calc(50% - 43px);
+    }
+}
+
+@media(max-width: 630px){
+    .item{
+        width: calc(100% - 43px);
+    }
+}
+
+
+ 

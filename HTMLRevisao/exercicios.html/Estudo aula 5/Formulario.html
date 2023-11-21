@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Formulario</title>
+</head>
+<body>
+    <main>
+        <h1>Formulario</h1>
+        <hr>
+        <br>
+        <form name="Formulario 1">
+            <label for="text">Nome: </label>
+            <input type="text" placeholder="Seu Nome" name="texto" id="textoId">
+            <br><br>
+            <label for="Email">Email: </label>
+            <input type="email" name="Email" nome="Email" placeholder="seuemail@gmail.com">
+            <br><br>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" minlength="8" required id="pass">
+            <br>
+            <input type="submit" nome="Enviar">
+            <br><br>
+            <hr>
+            <label for="num">Numero: </label>
+            <input type="number" nome="num" >
+            <br><br>
+            <hr>
+            <label for="chac">Multipla seleção: </label> <br>
+            <input type="checkbox" name="checkbox" id="chac" value="op1"> Opição 1 <br>
+            <input type="checkbox" name="checkbox" id="chac" value="op2"> Opição 2 <br>
+            <input type="checkbox" name="checkbox" id="chac" value="op3"> Opição 3 <br>
+            <br><br>
+            <label for="selec">Seleção unica: </label> <br>
+            <input type="radio" name="selecione" id="selec" value="Ope1"> Opição 1 <br>
+            <input type="radio" name="selecione" id="selec" value="Ope2"> Opição 2 <br>
+            <input type="radio" name="selecione" id="selec" value="Ope3"> Opição 3 <br>
+            <br><br>
+            <label for="select">Selecionar: </label>
+            <select name="seleçao" id="select">
+                <option value="op1">Opiçao 1</option>
+                <option value="op2">Opiçao 2</option>
+                <option value="op3">Opiçao 3</option>
+            </select>
+            <br>
+            <hr>
+            <br>
+            <label for="calender">Calendario: </label><br>
+            <input type="date" nome="Calendario" id="calender">
+            <br><br>
+            <label for="DH">Data e hora: </label><br>
+            <input type="datetime-local" name="Data/hora" id="DH">
+            <br><br>
+            <label for="Hora">Horario: </label><br>
+            <input type="time" name="Hora" id="Hora"><br>
+            <hr>
+            <br>
+           <label for="Desc">Descrição: </label><br>
+           <textarea name="Descrição" id="Desc" cols="30" rows="10"></textarea>
+            <br><br>
+            <hr>
+            <input type="submit"><br>
+            <br>
+            <input type="submit" value="Salvar"><br>
+            <br>
+            <input type="reset"><br>
+            <br>
+            <input type="button" value="ALERTA!" onclick="alert('você é tchola')"><br>
+            <br>
+            <hr>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.slideshow{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slides{
+    display: flex;
+}
+.slide{
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    animation: slide 10s infinite ease-in-out;
+    height: auto;
+}
+
+@keyframes slide{
+    0%{left: 0px;}
+    20%{left: 0px;}
+    30%{left: -100%;}
+    50%{left: -100%;}
+    60%{left: -200%;}
+    90%{left: -200%;}
+    100%{left: 0px;}
+}
+
+
+
+img{
+    width: 100%;
+}

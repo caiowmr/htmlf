@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cadastro</title>
+</head>
+<nav id="menu">
+    <ul>
+        <a  href="../html/index.html"><li>Menu principal</li></a>
+        <a href="../html/tabelaCadastros.html"><li>Ver cadastros</li></a>
+        
+    </ul>
+</nav>
+<body>
+
+        <section class="container-login">
+            <h1>Cadastro Cliente AutoSport</h1>
+            <p>Preencha o formulário a baixo para fazer parte  da familia AutoSport!</p>
+            <form id="cadastro-form">
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                <input type="text" id="sobrenome" name="Sobrenome" placeholder="Digite seu sobrenome" required>
+                
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
+                
+                <input type="text" id="cpf" name="CPF" placeholder="CPF" required>
+
+                <input type="text" name="telefone" id="telefone" placeholder="(xx)xxxxx-xxxx" required>
+
+                <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9" onblur="buscaCep(this.value)" required>
+                <input type="text" name="rua" id="rua" placeholder="Nome da Rua" required>
+                <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+                <input type="text" name="cidade" id="cidade" placeholder="cidade" required>
+                <input type="text" name="estado" id="estado" placeholder="estado" required>
+                
+                <button type="reset" id="reset" >Limpar</button>
+                <button type="submit" id="enviar" onclick="cadastrar()" >Cadastrar</button>
+            </form>
+        </section>
+        
+</body>
+<script src="../js/cadastro.js"></script>
+</html>

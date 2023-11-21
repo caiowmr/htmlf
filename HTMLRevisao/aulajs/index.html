@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aula JS</title>
+	<style>
+		dialog{
+			width: 70%;
+			border: 0px;
+			border-radius: 10px;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+		dialog::backdrop{
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+	</style>
+</head>
+<body>
+	<h1>Exemplo de Query Selector</h1>
+	<p>Este é um parágrafo</p>
+	<div>
+		<div>
+			<p>Este é um parágrafo dentro de duas Divs</p>
+		</div>
+	</div>
+	<span>
+		Esta é uma Tag Span
+		<p>Este é um parágrafo em uma Tag Span</p>
+	</span>
+	<a href="#">Abrir Modal</a>
+	<dialog>
+		<h2>Título Modal</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi facilis cum cupiditate laborum nostrum minima eum, adipisci voluptas soluta quam deserunt, qui ducimus nam obcaecati non delectus alias totam eligendi.</p>
+		<a href="#">Fechar Modal</a>
+	</dialog>
+	<script>
+		const p = document.querySelector("span p");
+		const paragrafos = document.querySelectorAll("p"); //retorna uma lista
+		const span = document.querySelector("span");
+		
+		paragrafos.forEach(par =>{
+			par.style.color = "green";
+		});
+		
+		p.style.color = "blue";
+
+		span.style.display = "block";
+		span.style.padding = "10px";
+		span.style.fontWeight = "bold";
+		span.style.backgroundColor = "lightblue";
+
+		//MODAL
+
+		const modal = document.querySelector("dialog");
+		const btnModal = document.querySelectorAll("a");
+
+		btnModal[0].onclick = function (){
+			modal.showModal();
+		}
+
+		btnModal[1].onclick = function(){
+			modal.close();
+		}
+
+		modal.addEventListener("click", evento =>{
+			if(evento.target === modal){
+				modal.close();
+			}
+		})
+
+	</script>
+</body>
+</html>

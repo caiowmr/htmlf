@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+             <p id="saida">
+                Trablhando com vetor
+            </p>
+        </section>          
+    </main>    
+    <script>
+         const saida = document.getElementById('saida');
+
+         var frutas = ['Maça', 'Banana', 'Pera', 'Laranja', 'Abacate', 'Abacaxi', 'Morango']
+
+        //for(i=0; i>frutas.length; i++)
+        for( i in frutas){
+            saida.innerText += "\nChave = " + i + " Fruta = " + frutas[i];
+        }
+
+        saida.innerText += "\n";
+
+        for(fruta of frutas){
+            saida.innerText += "\n Valor = " + fruta;
+        }
+        
+        saida.innerText += "\n";
+
+        frutas.forEach((fruta, chave) => {
+            saida.innerText += "\n cahve = " + chave + " Valor = " + fruta;
+        });
+
+        frutas.push("Pitai");
+        saida.innerText += "\n\n adicionado no no final do vetor: " + frutas;
+        
+        frutas.pop();
+        saida.innerText += "\n\nRemover o ultimo elemento: " + frutas;
+        
+        frutas.unshift("Pitai");
+        saida.innerText += "\n\n adicionando no inicio do vetor: " + frutas;
+        
+        frutas.shift();
+        saida.innerText += "\n\n removendo no inicio do vetor: " + frutas;
+
+        var novoVetor = frutas.slice(1, 4);
+        saida.innerText += "\n\n novo vetor: " + novoVetor;
+        
+        //remover
+        frutas.splice(1, 1);
+        saida.innerText += "\n\n Removentdo elemento do vetor: "+frutas;
+
+        frutas.splice(2, 1,"BANANA");
+        saida.innerText += "\n\n Removentdo elemento do vetor: "+frutas;
+
+        var index = frutas.indexOf("Pera");
+        saida.innerText += "\n\n Index Maça: " + index;
+    </script>
+</body>
+</html>

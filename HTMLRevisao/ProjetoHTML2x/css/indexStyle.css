@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+nav ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+nav ul a{
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul a li{
+	display: inline-flex;
+	padding: 0px 10px;
+}
+li:hover{
+    box-shadow: -2px, -2px, 0.9px rgba(0, 0, 0, 0.9px);    
+    
+}
+
+ul:hover li:not(:hover){
+    color: rgb(132, 132, 132);
+}
+
+#menu{
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	padding: 20px 0px;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	transition: padding ease-in-out 0.5s;
+}
+
+#menu.shrink{
+	padding: 10px 0px;
+}
+
+#cadastro{background-image: url(../img/Blue\ And\ Red\ Fire\ Wallpaper.jpg);}
+#vestuario{ background-image: url(../img/download.jpg);}
+#pecas{ background-image: url(../img/200346-qual-e-a-diferenca-entre-peca-original-e-peca-de-reposicao-1280x720.jpg);}
+#carros{ background-image: url(../img/724681.jpg);}
+#sobre{background-image: url(../img/Blue\ And\ Red\ Fire\ Wallpaper.jpg);}
+
+.paralax{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+.paralax2{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 50vh;
+}
+.conteudo{
+	width: 70%;
+	background-color: rgba(0, 0, 0, 0.727);
+	border-radius: 10px;
+	color: #fff;
+	padding: 20px;
+}
+
+.conteudo3{
+	width: 97%;
+	background-color: rgba(0, 0, 0, 0.727);
+	border-radius: 50px;
+	color: #fff;
+	padding: 20px;
+}
+.cont{
+    background-color: rgba(254, 254, 254, 0.208);
+    width: 30%;
+    border-radius: 50px;
+    padding: 5px ;
+    display: inline-block;
+    
+}
+
+footer{
+	background-color: #333;
+	color: #fff;
+	padding: 10px 0px;
+	text-align: center;
+}
+
+dialog{
+	width: 70%;
+	height: 70%;
+	border: 0px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	
+}
+dialog::backdrop{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.botao {
+	display: inline-block;
+	padding: 10px 20px; 
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background-color: rgb(209, 47, 6);
+	border-radius: 5px; 
+	transition: background-color 0.3s ease; 
+  }
+  
+  
+  .botao:hover {
+	background-color: #1963ac;
+	text-shadow: 2px 2px 2px rgb(0, 255, 242);
+  }
+
+  dialog{
+	background-color: rgba(231, 231, 231, 0.908);
+	
+  }

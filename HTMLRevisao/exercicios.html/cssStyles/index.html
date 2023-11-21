@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./Styles/styles.css">
+
+    <title>Estudo de styles</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Displays</h1>
+
+        <div class="block">
+            <h2>Display block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quam? Praesentium unde libero cumque sed aperiam, quisquam laborum exercitationem esse minus fuga optio ut reprehenderit itaque quam laboriosam consequuntur non!</p>
+        </div>
+        <span class="gray block">Diplay block</span>
+        <div>
+            <h2>Display Inline</h2>
+            <div class="inline">Display inline1</div>
+            <div class="inline">Display inline</div>
+            <div class="inline">Display inline</div>
+            <div class="inline">Display inline</div>
+            <div class="inline">Display inline5</div>
+        </div>
+        <div>
+            <h2>Display inline-block</h2>
+            <div class="inline-block">Display inline-block</div>
+            <div class="inline-block">Display inline-block</div>
+            <div class="inline-block">Display inline-block</div>
+            <div class="inline-block">Display inline-block</div>
+            <div class="inline-block">Display inline-block</div>    
+        </div>
+        <br>
+        <div id="mostrar" class="none">
+            <h2>Display none</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dolor, quas porro, quae sunt quibusdam nobis neque voluptatem incidunt iusto minima cupiditate! Sequi laborum dicta facilis! Aut reprehenderit laboriosam ab!</p>
+            <ul>
+                <li>elemento1</li>
+                <li>elemento2</li>
+                <li>elemento3</li>
+                <li>elemento4</li>
+            </ul>
+        </div>
+        <br>
+        <form>
+            <label for="mostrar">Mostrar</label>
+            <input type="radio" id="mostrar" name="Exibir"
+            onclick="document.getElementById('mostrar').classList.remove('none')">
+            <Label for="desmostrar">Fechar</Label>
+            <input type="radio" id="mostrar" name="Exibir"
+            onclick="document.getElementById('mostrar').classList.add('none')">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <section>
+            <h1>Formulario</h1>
+            <form name="fomr1">
+                <label for="Texto">Texto: </label>
+                <input type="text" placeholder="nome" name="Texto" id="textoId">
+                <br>
+                <br>
+                <label for="senha">Senha: </label>
+                <input type="password"  name="senha">
+                <br>
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" placeholder="email@gmail.com" name="emai">
+                <br>
+                <br>
+                <label for="numero">Numero: </label>
+                <input type="number" name="numero">
+                <br>
+                <br>
+                <hr>
+                <label for="checkbox">Seleçao multipla</label><br>
+                <input type="checkbox" name="chacbox" value="op1"> opção 1 <br>
+                <input type="checkbox" name="chacbox" value="op2"> opção 2 <br>
+                <input type="checkbox" name="chacbox" value="op2"> opção 3 <br><br>
+                <hr>
+                <label for="Seleção">selecçao unica</label><br>
+                <input type="radio" name="Seleço" value="Ope 1"> op1 <br>
+                <input type="radio" name="Seleço" value="Op 2"> op2 <br>
+                <input type="radio" name="Seleço" value="Ope 3"> op3 <br><br>
+                <hr>
+                <label for="data">Calendario: </label>
+                <input type="date" name="data"><br><br>
+                <label for="Datahora">Data e Hora</label><br>
+                <input type="datetime-local" nome="Datahora"><br><br>
+                <label for="hora">Hora</label>
+                <input type="time" nome="hora">
+                <hr>
+                <label for="slect">Selecionar: </label>
+                <select name="slect">
+                    <option value="op1">ope1</option>
+                    <option value="op2">ope2</option>
+                    <option value="op3">ope3</option>
+                </select>
+                <br><br>
+                <hr>
+                <label for="area">Desc: </label><br><br>
+                <textarea name="area" cols="30" rows="10"></textarea><br><br>
+                <hr>
+
+                <hr>
+                <input type="submit">
+                <br>
+                <input type="submit" value="Salvar">
+                <br>
+                <input type="reset">
+                <br>
+                <input type="button" value="Alerta!" onclick="alert('Voce é gay')">
+            </form>
+            <br><br><br><br><br><br><br>
+            <a href="#" value="Alerta" onclick="alert('gay detectado')" form="fomr1">alerta</a>
+            <br><br><br><br><br><br><br>
+        </section>
+
+    </main>
+</body>
+</html>
+

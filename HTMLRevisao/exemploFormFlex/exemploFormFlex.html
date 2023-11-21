@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+        form{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        input {
+            flex-grow: 1;
+            flex-basis: 400px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        #nome, #email, #cidade{
+            flex-basis: 800px;
+        }
+        
+        #senha, #confirmarSenha, #telefone{            
+            flex-basis: 300px;
+        }
+        #alguma{
+            flex-basis: 200px;
+        }
+        button {
+            flex-grow: 1;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        button[type="reset"]{            
+            background-color: #f5b049;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button[type="reset"]:hover{            
+            background-color: #ac7727;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Cadastro de Usuário</h1>
+            <p>Preencha o formulário abaixo para se cadastrar:</p>
+
+            <form>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
+                <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+                <input type="text" id="telefone" name="telefone" placeholder="Digite seu DDD" required>
+                <input type="text" id="alguma" name="alguma" placeholder="alguma" required>
+                <input type="text" id="alguma" name="alguma" placeholder="alguma" required>
+                <button type="reset" >Limpar</button>
+                <button type="submit" >Cadastrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
