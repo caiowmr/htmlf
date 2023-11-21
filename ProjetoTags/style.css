@@ -1,0 +1,105 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho (h1) */
+h1 {
+    color: #0066cc;
+}
+
+/* Estilo para parágrafos (p) */
+p {
+    line-height: 1.5;
+}
+
+/* Estilo para listas ordenadas (ol) */
+ol {
+    list-style-type: decimal;
+}
+
+/* Estilo para listas não ordenadas (ul) */
+ul {
+    list-style-type: square;
+}
+
+/* Estilo para links (a) */
+a {
+    color: #990000;
+    text-decoration: none;
+}
+
+/* Estilo para links ao passar o mouse sobre eles */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para imagens (img) */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para tabelas (table) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilo para cabeçalhos de tabela (th) */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo para formulários (form) */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Estilo para campos de texto (input[type="text"]) */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilo para caixas de seleção (select) */
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilo para botões (input[type="submit"]) */
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para caixas de verificação (input[type="checkbox"]) */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Estilo para rodapé (footer) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
